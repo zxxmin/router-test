@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import FilepondPage from "./filepond/FilepondPage";
 import ReactDropzonePage from "./reactDropzone/ReactDropzonePage";
+import ReactUploadyPage from "./reactUploady/ReactUploady";
 
 const FilePage = () => {
     const tabs = ['Filepond', 'React Dropzone', 'React Uploady'];
@@ -41,6 +42,7 @@ const FilePage = () => {
 
             {tabIndex === 0 && <FilepondPage />}
             {tabIndex === 1 && <ReactDropzonePage />}
+            {tabIndex === 2 && <ReactUploadyPage />}
         </>
     )
 };
